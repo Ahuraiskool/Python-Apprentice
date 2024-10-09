@@ -16,39 +16,45 @@ turtle.setup(width=600, height=600)     # Set the size of the window
 tina = turtle.Turtle()                  # Create a turtle named tina
 
 tina.shape('turtle')                    # Set the shape of the turtle to a turtle
-tina.speed(2)                           # Make the turtle move as fast, but not too fast.
-
-tina.pencolor('blue')                   # Set the pen color to blue
-tina.forward(150)                       # Move tina forward by the forward distance
-tina.left(90)                           # Turn tina left by the left turn
-
-tina.pencolor('red')                    # Set the pen color to red
-tina.forward(150)                       # Continuie the last two steps three more times
-tina.left(90)                           # to draw a square
-
-tina.pencolor('green')                  # Set the pen color to green
-tina.forward(150)
-tina.left(90)
-
-tina.pencolor('purple')                 # Set the pen color to purple
-tina.forward(150)
-tina.left(90)
-
-tina.penup()                            # Lift the pen up so we can move tina without drawing
-tina.forward(20)                        # Move tina forward by 20
-tina.left(90)                           # Turn tina left by 90 degrees
-tina.forward(20)                        # Move tina forward by 20
-tina.write("Why, hello there!")         # Write the message "Why, hello there!"
-tina.backward(20)                       # Move tina backward by 20
-
-tina.goto(-50,0)
+tina.speed(2)                           # Make the turtle move as fast, but not too fast
+tina.color(“black”)
+tina.circle(30,180)
+tina.forward(70)
+tina.circle(30,180)
+tina.forward(70)
+tina.penup()
+tina.forward(70)
 tina.pendown()
-tina.color('red')                       # Set the color of tina to red
-tina.begin_fill()
-tina.circle(101, steps=50)
-tina.end_fill()
+tina.left(90)
+tina.forward(60)
+tina.circle(75,180)
+tina.penup()
+tina.forward(60)
+tina.pendown()
+tina.forward(140)
+tina.circle(27,180)
+tina.forward(50)
+tina.circle(-21,180)
+tina.forward(50)
+tina.circle(27,180)
+tina.forward(200)
+tina.right(90)
+tina.circle(-40,90)
+tina.forward(70)
+tina.circle(-40,90)
+tina.penup()
+tina.forward(80)
+tina.right(90)
+tina.forward(150)
+tina.right(180)
+tina.pendown()
+tina.pencolor("cyan")
+tina.circle(-30,90)
+tina.forward(60)
 
-turtle.exitonclick()                    # Close the window when we click on it
+
+turtle.exitonclick()
+               # Close the window when we click on it
 
 # Now you can try writing your own programs. Open
 # the next file 03_Turtle_Tricks.py
